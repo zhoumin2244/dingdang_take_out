@@ -1,4 +1,4 @@
-### 1.项目概述
+### 1.项目概述（test——push——git）
 项目分为后台管理端,前台移动端和垃圾清理端:
 
 #### (1) 后台管理端
@@ -34,7 +34,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/9413e0de4038477bafddc3dbd9608875.png)
 
  ### 3.服务器环境搭建(Linux环境)
- 
+
 > 安装可参考下面三篇博客:
 > [Linux centos7.0搭建Java开发环境(保姆级教程)](https://blog.csdn.net/weixin_42753193/article/details/125964013),
 > [Linux centOs7.0安装宝塔面板(保姆级教程)](https://blog.csdn.net/weixin_42753193/article/details/125959289)和
@@ -199,7 +199,7 @@ shell存放在项目中的shell文件下:
 #### (1) 后台管理端
 
 > 后台管理端访问路径为:[http://124.220.28.236:8089/backend/page/login/login.html](http://124.220.28.236:8089/backend/page/login/login.html)(账号zhangsan,密码:123456)
- 
+
 
  - 后台登入
 

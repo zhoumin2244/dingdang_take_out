@@ -2,6 +2,7 @@ package com.dudu;
 
 
 import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
@@ -17,8 +18,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @ServletComponentScan
 @EnableTransactionManagement // 开启事务支持
 @EnableCaching //开启Spring Cache注解方式是缓存功能
+@Slf4j
 public class MainApplication {
     public static void main(String[] args) {
+        log.info("kaishi yunxing chengxu ");
         SpringApplication.run(MainApplication.class);
+        log.info("启动了");
     }
 }

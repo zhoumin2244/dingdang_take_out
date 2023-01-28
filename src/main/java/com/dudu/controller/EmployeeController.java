@@ -81,9 +81,10 @@ public class EmployeeController {
     @PostMapping
     public Result<String> saveEmployee(@RequestBody Employee employee,HttpServletRequest request){
        log.info(employee+"employee信息"+request.getSession().getAttribute("employee"));
+       String pwd=employee.getPassword();
         try {
-            // 将密码md5加密
-            employee.setPassword(DigestUtils.md5DigestAsHex("123456".getBytes()));
+            // 将密码md5加密,如果写死的话就是默认为初始密码
+            employee.setPassword(DigestUtils.md5DigestAsHex(pwd.getBytes()));
             // 创建者信息
             employeeService.save(employee);
         } catch (Exception exception) {
